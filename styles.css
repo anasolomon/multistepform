@@ -1,0 +1,385 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #eff4ff;
+    padding: 7.3%;
+    margin: 0;
+}
+p{
+    font-size: 16px;
+    margin: 0;
+}
+h1{
+    color: hsl(213, 96%, 18%);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.pageone, .pagetwo, .pagethree, .pagefour{
+    margin: 0 auto;
+    background-color: #fefffe;
+    width: 940px;
+    height: 600px;
+    box-shadow: 1px 1px 50px hsla(206, 94%, 87%, 0.745);
+    border-radius: 15px;
+    position: relative;                         /* parent of absolutes */
+}
+.pagetwo, .pagethree, .pagefour{
+    display: none;
+}
+
+/* right side div of the page */
+.splitone{
+    height: 570px;
+    width: 270px;
+    float: left;
+    margin: 15px;
+    position: relative;         /*  parent of position absolutes */
+
+}
+
+.clickone, .clicktwo, .clickthree, .clickfour{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    border-radius: 100%;
+    border: 1px solid;
+    height: 24px;
+    width: 30px;
+    text-align: center;
+    padding-top: 6px;
+    color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.clickone-text, .clicktwo-text, .clickthree-text, .clickfour-text{
+    height: 30px;
+    width: 100px;
+    left: 80px;
+    position: absolute;
+}
+
+.clickone-text{
+    top: 38px;
+}
+.clicktwo{
+    top: 100px;
+}
+.clicktwo-text{
+    top: 98px;
+}
+.clickthree{
+    top: 160px;
+}
+.clickthree-text{
+    top: 158px;
+}
+.clickfour{
+    top: 220px;
+}
+.clickfour-text{
+    top: 218px;
+}
+.skinny-p{
+    font-size: 0.8rem;
+    color: hsl(228, 100%, 84%);
+    margin-bottom: 5px;
+}
+.thicc-p{
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: hsl(217, 100%, 97%);
+}
+
+.active-page{
+    background-color: hsl(206, 94%, 87%);
+    border-color: hsl(206, 94%, 87%);
+    color: black;
+}
+
+/* left side div of page */
+.splittwo{
+    height: 385px;
+    width: 540px;
+    float: left;
+    margin-top: 55px;
+    margin-left: 90px;
+}
+
+.splittwo-p{
+    margin-bottom: 40px;
+    color: hsl(231, 11%, 63%);
+}
+.userinfo-p{
+    color: hsl(213, 96%, 18%);
+    width: 200px;
+    float: left;
+    font-size: 0.9rem;
+}
+span{
+    color:hsl(354, 84%, 57%) ;
+    float: right;
+    margin-right: 90px;
+    font-weight: 700;
+    display: none;
+}
+.email-input, .name-input, .phone-input{
+    width: 430px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid hsl(229, 24%, 87%);
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: hsl(213, 96%, 18%);
+}
+.phone-input{
+    margin-bottom: 0;
+}
+.name-error, .email-error, .phone-error{
+    font-size: 0.9rem;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+::placeholder{
+    color:hsl(231, 11%, 63%) ;
+}
+textarea:focus, input:focus{
+    color:hsl(213, 96%, 18%);
+    outline: none !important;
+    border:1px solid hsl(243, 100%, 62%);
+}
+
+button{
+    color: hsl(217, 100%, 97%);
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 10px;
+    border: none;
+    height: 48px;
+    width: 123px;
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    right: 100px;
+    bottom: 32px;
+    cursor: pointer;
+}
+.goback-button{
+    position: absolute;
+    left: 358px;
+    bottom: 33px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 11%, 63%);
+}
+
+/* PAGE TWO */
+
+.plan-imgs{
+    width: 136px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    padding-bottom: 15px;
+    margin-top: 3px;
+    float: left;
+    cursor: pointer;
+}
+.plan-imgs:hover{
+    border: 1px solid hsl(243, 100%, 62%);
+}
+.img-logos{
+    padding: 18px 0 40px 15px;
+}
+.middle{
+    margin-right: 18px ;
+    margin-left: 18px ;
+}
+.monthly-p, .monthly-payment-p, .yearly-p-info{
+    margin-left: 15px;
+}
+.monthly-p{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+.monthly-payment-p{
+    color: hsl(231, 11%, 63%);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+.yearly-p-info{
+    margin-top: 10px;
+    color: hsl(213, 96%, 18%);
+    font-size: 0.8rem;
+    display: none;
+}
+
+/* checkbox's div */
+.monthly-or-yearly{
+    float: left;
+    width: 450px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    background-color:#f8f8ff;
+}
+.monthly-checkbox{
+    color: hsl(213, 96%, 18%);
+}
+.yearly-checkbox{
+    color: hsl(231, 11%, 63%);
+}
+.the-checkbox{
+    margin: 0 25px 0 50px;
+}
+.monthly-checkbox, .the-checkbox , .yearly-checkbox{
+    float: left;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.checkbox-div{
+    height: 20px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+/* PAGE THREE */
+.add-ons{
+    float: left;
+    width: 450px;
+    height: 80px;
+    position: relative;                 /* parent of absolute */
+    border-radius: 10px;
+    border: 1px solid hsl(229, 24%, 87%);
+    cursor: pointer;
+}
+.add-ons:hover{
+    border: 1px solid hsl(243, 100%, 62%);
+}
+.middle-add-on{
+    margin: 15px 0;
+}
+
+.add-ons-checkbox{
+    margin: 30px 25px;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.addon-headline{
+    margin: 20px 0 5px 0;
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+.addon-minorline{
+    color: hsl(231, 11%, 63%);
+    margin: 0;
+}
+.addon-price{
+    float: right;
+    top: 30px;
+    right: 25px;
+    position: absolute;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: hsl(243, 100%, 62%);
+}
+input[type=checkbox] {
+    accent-color: hsl(243, 100%, 62%);
+    cursor: pointer;
+  }
+
+/* PAGE FOUR */
+.finishup-div{
+    width: 400px;
+    padding: 25px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #f8f8ff;
+}
+
+.planselected{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.changeplan{
+    margin-bottom: 30px;
+    color: hsl(231, 11%, 63%);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.planprice{
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: hsl(213, 96%, 18%);
+}
+.hr{
+    width: 400px;
+    margin-bottom: 20px;
+    display: none;
+    border-bottom: 1px solid hsl(229, 24%, 87%);
+}
+.onlineservice, .largerstorage, .cprofile{
+    color: hsl(231, 11%, 63%);
+    height: 20px;
+    font-size: 0.9rem;
+    display: none;
+}
+.onlineservice, .largerstorage{
+    margin-bottom: 15px;
+}
+.onlineservice-price, .largerstorage-price, .cprofile-price{
+    position: absolute;
+    right: 25px;
+    color: hsl(213, 96%, 18%);
+    font-size: 0.9rem;
+    display: none;
+}
+.onlineservice-price{
+    top:118px;
+}
+.largerstorage-price{
+    top: 153px;
+}
+.cprofile-price{
+    top: 189px;
+}
+.total-div{
+    padding: 25px;
+    width: 400px;
+    position: relative;
+}
+.total-p{
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: hsl(231, 11%, 63%);
+}
+.total-price{
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: hsl(243, 100%, 62%);
+}
+.test{
+    color: hsl(213, 96%, 18%) hsl(243, 100%, 62%) hsl(228, 100%, 84%) hsl(206, 94%, 87%) hsl(354, 84%, 57%);
+    color: hsl(231, 11%, 63%) hsl(229, 24%, 87%) hsl(217, 100%, 97%) hsl(231, 100%, 99%) hsl(0, 0%, 100%);
+}
+

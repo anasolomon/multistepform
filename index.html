@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Multi-step form</title>
+
+</head>
+<body>
+  <div class="pageone">
+    <div class="splits splitone">
+      <img src="assets/images/bg-sidebar-desktop.svg">
+      <div class="clickone active-page">1</div>
+      <div class="clickone-text">
+        <p class="skinny-p">STEP 1</p>
+        <p class="thicc-p">YOUR INFO</p>
+      </div>
+
+      <div class="clicktwo" onclick="clicktwo()">2</div>
+      <div class="clicktwo-text">
+        <p class="skinny-p">STEP 2</p>
+        <p class="thicc-p">SELECT PLAN</p>
+      </div>
+
+      <div class="clickthree" onclick="clickthree()">3</div>
+      <div class="clickthree-text">
+        <p class="skinny-p">STEP 3</p>
+        <p class="thicc-p">ADD-ONS</p>
+      </div>
+
+      <div class="clickfour" onclick="clickfour()">4</div>
+      <div class="clickfour-text">
+        <p class="skinny-p">STEP 4</p>
+        <p class="thicc-p">SUMMARY</p>
+      </div>
+    </div>
+    
+    <div class="splits splittwo">
+      <h1>Personal info</h1>
+      <p class="splittwo-p">Please provide your name, email address, and phone number.</p>
+      
+      <!-- remove values after done testing -->
+      <p class="userinfo-p">Name</p> <span class="name-error">This field is required</span>
+      <input type="text" class="name-input" value="Vanessa Mint" onclick="reset_name_error()"  placeholder="e.g. Stephen King">
+
+      <p class="userinfo-p">Email Address</p> <span class="email-error">This field is required</span>
+      <input type="text" class="email-input" value="anamariatanasciuc@gmail.com" onclick="reset_email_error()" placeholder="e.g. stephenking@lorem.com">
+
+      <p class="userinfo-p">Phone Number</p> <span class="phone-error">This field is required</span>
+      <input type="number" class="phone-input" value="123456789" onclick="reset_phone_error()" placeholder="e.g. +1 234 567 890">
+
+    </div>
+    <div>
+      <button onclick="clicktwo()">Next Step</button>
+    </div>
+  </div>
+
+  <div class="pagetwo">
+    <div class="splits splitone">
+      <img src="assets/images/bg-sidebar-desktop.svg">
+      <div class="clickone" onclick="clickone()">1</div>
+      <div class="clickone-text">
+        <p class="skinny-p">STEP 1</p>
+        <p class="thicc-p">YOUR INFO</p>
+      </div>
+
+      <div class="clicktwo active-page">2</div>
+      <div class="clicktwo-text">
+        <p class="skinny-p">STEP 2</p>
+        <p class="thicc-p">SELECT PLAN</p>
+      </div>
+
+      <div class="clickthree" onclick="clickthree()">3</div>
+      <div class="clickthree-text">
+        <p class="skinny-p">STEP 3</p>
+        <p class="thicc-p">ADD-ONS</p>
+      </div>
+
+      <div class="clickfour" onclick="clickfour()">4</div>
+      <div class="clickfour-text">
+        <p class="skinny-p">STEP 4</p>
+        <p class="thicc-p">SUMMARY</p>
+      </div>
+    </div>
+    
+    <div class="splits splittwo">
+      <h1>Select your plan</h1>
+      <p class="splittwo-p">You have the option of monthly or yearly billing.</p>
+      
+      <div class="plan-imgs arcade" onclick="arcadef()"><img class="img-logos" src="assets/images/icon-arcade.svg" alt="icon arcade">
+        <p class="monthly-p">Arcade</p>
+        <p class="monthly-payment-p">$9/mo</p>
+        <p class="yearly-p-info">2 month free</p>
+      </div>
+      <div class="plan-imgs middle advanced" onclick="advancedf()"><img class="img-logos" src="assets/images/icon-advanced.svg" alt="icon advanced">
+        <p class="monthly-p">Advanced</p>
+        <p class="monthly-payment-p">$12/mo</p>
+        <p class="yearly-p-info">2 month free</p>
+      </div>
+      <div class="plan-imgs pro" onclick="prof()"><img class="img-logos" src="assets/images/icon-pro.svg" alt="icon pro">
+        <p class="monthly-p">Pro</p>
+        <p class="monthly-payment-p">$15/mo</p>
+        <p class="yearly-p-info">2 month free</p>
+      </div>
+
+      <!-- toggle -->
+      <div class="monthly-or-yearly">
+        <div class="checkbox-div">
+          <p class="monthly-checkbox">Monthly</p>
+          <input type="checkbox" class="the-checkbox" onclick="checkboxf()">
+          <p class="yearly-checkbox">Yearly</p>
+        </div>
+      </div>
+
+      <button class="goback-button" onclick="clickone()">Go Back</button>
+      <button onclick="clickthree()">Next Step</button>
+    </div>
+  </div>
+
+  <div class="pagethree">
+    <div class="splits splitone">
+      <img src="assets/images/bg-sidebar-desktop.svg">
+      <div class="clickone" onclick="clickone()">1</div>
+      <div class="clickone-text">
+        <p class="skinny-p">STEP 1</p>
+        <p class="thicc-p">YOUR INFO</p>
+      </div>
+
+      <div class="clicktwo" onclick="clicktwo()">2</div>
+      <div class="clicktwo-text">
+        <p class="skinny-p">STEP 2</p>
+        <p class="thicc-p">SELECT PLAN</p>
+      </div>
+
+      <div class="clickthree active-page">3</div>
+      <div class="clickthree-text">
+        <p class="skinny-p">STEP 3</p>
+        <p class="thicc-p">ADD-ONS</p>
+      </div>
+
+      <div class="clickfour" onclick="clickfour()">4</div>
+      <div class="clickfour-text">
+        <p class="skinny-p">STEP 4</p>
+        <p class="thicc-p">SUMMARY</p>
+      </div>
+    </div>
+    
+    <div class="splits splittwo">
+      <h1>Pick add-ons</h1>
+      <p class="splittwo-p">Add-ons help enhance your gaming experience.</p>
+      
+      <div>
+        <div class="add-ons firstaddon"><input type="checkbox" class="add-ons-checkbox" onclick="firstaddon()">
+          <p class="addon-headline">Online service</p>
+          <p class="addon-minorline">Access to multiplayer games</p>
+          <p class="addon-price">+$1/mo</p>
+        </div>
+        <div class="add-ons middle-add-on secondaddon"><input type="checkbox" class="add-ons-checkbox" onclick="secondaddon()">
+          <p class="addon-headline">Larger storage</p>
+          <p class="addon-minorline">Extra 1TB of cloud save</p>
+          <p class="addon-price">+$2/mo</p>
+        </div>
+        <div class="add-ons thirdaddon"><input type="checkbox" class="add-ons-checkbox" onclick="thirdaddon()">
+          <p class="addon-headline">Customizable Profile</p>
+          <p class="addon-minorline">Custom theme on your profile</p>
+          <p class="addon-price">+$2/mo</p>
+        </div>
+      </div>
+      <button class="goback-button" onclick="clicktwo()">Go Back</button>
+      <button onclick="clickfour()">Next Step</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="pagefour">
+    <div class="splits splitone">
+      <img src="assets/images/bg-sidebar-desktop.svg">
+      <div class="clickone" onclick="clickone()">1</div>
+      <div class="clickone-text">
+        <p class="skinny-p">STEP 1</p>
+        <p class="thicc-p">YOUR INFO</p>
+      </div>
+
+      <div class="clicktwo" onclick="clicktwo()">2</div>
+      <div class="clicktwo-text">
+        <p class="skinny-p">STEP 2</p>
+        <p class="thicc-p">SELECT PLAN</p>
+      </div>
+
+      <div class="clickthree" onclick="clickthree()">3</div>
+      <div class="clickthree-text">
+        <p class="skinny-p">STEP 3</p>
+        <p class="thicc-p">ADD-ONS</p>
+      </div>
+
+      <div class="clickfour active-page">4</div>
+      <div class="clickfour-text">
+        <p class="skinny-p">STEP 4</p>
+        <p class="thicc-p">SUMMARY</p>
+      </div>
+    </div>
+    
+    <div class="splits splittwo">
+      <h1>Finishing up</h1>
+      <p class="splittwo-p">Double check everything looks OK before confirming.</p>
+      
+      <div class="finishup-div">
+        <p class="planselected">No selection</p>
+        <p class="changeplan" onclick="clicktwo()">Change</p>
+        <p class="planprice">$0</p>
+
+        <div class="hr"></div>
+        <p class="onlineservice">Online service</p>
+        <p class="largerstorage">Larger storage</p>
+        <p class="cprofile">Customizable profile</p>
+        <p class="onlineservice-price"></p>
+        <p class="largerstorage-price"></p>
+        <p class="cprofile-price"></p>
+      </div>
+      <div class="total-div">
+        <p class="total-p">Total (per month)</p>
+        <p class="total-price">$0</p>
+      </div>
+      <button class="goback-button" onclick="clickthree()">Go Back</button>
+      <button>Confirm</button>
+    </div>
+  </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
