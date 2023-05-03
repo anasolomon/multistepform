@@ -6,7 +6,7 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [What I learned](#what-i-learned)
@@ -31,11 +31,19 @@ Users should be able to:
   - The email address is not formatted correctly
   - A step is submitted, but no selection has been made
 
-### Screenshot
+### Screenshots
 
 Page one
 ![](./assets/images/Page1.png)
 
+Page Two
+![](./assets/images/Page2.png)
+
+Page Three
+![](./assets/images/Page3.png)
+
+Page Four
+![](./assets/images/Page4.png)
 
 ### Links
 
@@ -45,6 +53,8 @@ Page one
 ## My process
 
 ### What I learned
+ 
+ 
 1. 
 You can change the placeholder's text color with "::placeholder" in css:
 ```css
@@ -52,10 +62,9 @@ You can change the placeholder's text color with "::placeholder" in css:
     color:hsl(231, 11%, 63%) ;
 }
 ```
-
+ 
 2. 
 If the user forgot to input one of the following then it would trigger a flag response to be equal to 0.
-![](imgs/form-error.png)
 ```js
 if(namee.value==""){
         document.querySelector(".name-error").style.display="block";
@@ -66,14 +75,12 @@ if(namee.value==""){
         document.querySelector(".email-error").style.display="block";
         document.querySelector(".email-input").style.border="1px solid hsl(354, 84%, 57%)";
         input_error_flag = 0;
-        console.log("went inside empty email error");
     }
     else if(!isEmail(email.value)) {
         document.querySelector(".email-error").innerHTML="Please enter a valid email";
         document.querySelector(".email-error").style.display="block";
         document.querySelector(".email-input").style.border="1px solid hsl(354, 84%, 57%)";
         input_error_flag = 0;
-        console.log("went inside invalid email error");
     }
     if(phone.value==""){
         document.querySelector(".phone-error").style.display="block";
@@ -81,7 +88,8 @@ if(namee.value==""){
         input_error_flag = 0;
     }
 ```
-
+ 
+ 
 3. 
 You can remove arrow keys from input type number with:
 ```css 
