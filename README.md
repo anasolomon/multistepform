@@ -55,7 +55,7 @@ Page Four
 ### What I learned
  
  
-1. 
+1.
 You can change the placeholder's text color with "::placeholder" in css:
 ```css
 ::placeholder{
@@ -63,7 +63,7 @@ You can change the placeholder's text color with "::placeholder" in css:
 }
 ```
  
-2. 
+2.
 If the user forgot to input one of the following then it would trigger a flag response to be equal to 0.
 ```js
 if(namee.value==""){
@@ -90,7 +90,7 @@ if(namee.value==""){
 ```
  
  
-3. 
+3.
 You can remove arrow keys from input type number with:
 ```css 
 input[type=number]::-webkit-inner-spin-button, 
