@@ -15,6 +15,8 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+(I do not understand why the website breaks on github, it was working fine remotely. The last page (4) is not supposed to be accessable until the user has completed all fields and some of the payment text overlaps weirdly... plus once the Confim button is pressed the user is supposed to get redirected to a confirmation page)
+
 ## Overview
 
 ### The challenge
