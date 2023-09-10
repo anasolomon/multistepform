@@ -16,7 +16,10 @@ h1{
     margin-bottom: 10px;
 }
 
-.pageone, .pagetwo, .pagethree, .pagefour{
+.mobile-bg{
+    display: none;
+}
+.pageone, .pagetwo, .pagethree, .pagefour, .pageconfirm{
     margin: 0 auto;
     background-color: #fefffe;
     width: 940px;
@@ -25,7 +28,7 @@ h1{
     border-radius: 15px;
     position: relative;                         /* parent of absolutes */
 }
-.pagetwo, .pagethree, .pagefour{
+.pagetwo, .pagethree, .pagefour, .pageconfirm{
     display: none;
 }
 
@@ -98,7 +101,7 @@ h1{
 .active-page{
     background-color: hsl(206, 94%, 87%);
     border-color: hsl(206, 94%, 87%);
-    color: black;
+    color: hsl(213, 96%, 18%);;
 }
 
 /* left side div of page */
@@ -335,31 +338,29 @@ input[type=checkbox] {
     display: none;
     border-bottom: 1px solid hsl(229, 24%, 87%);
 }
+.leftdiv4{
+    width: 140px;
+    display: inline-block;
+}
+.rightdiv4{
+    width: 90px;
+    float: right;
+}
 .onlineservice, .largerstorage, .cprofile{
     color: hsl(231, 11%, 63%);
-    height: 20px;
     font-size: 0.9rem;
     display: none;
 }
-.onlineservice, .largerstorage{
+.onlineservice, .largerstorage, .onlineservice-price, .largerstorage-price{
     margin-bottom: 15px;
 }
 .onlineservice-price, .largerstorage-price, .cprofile-price{
-    position: absolute;
-    right: 25px;
     color: hsl(213, 96%, 18%);
     font-size: 0.9rem;
+    float: right;
     display: none;
 }
-.onlineservice-price{
-    top:118px;
-}
-.largerstorage-price{
-    top: 153px;
-}
-.cprofile-price{
-    top: 189px;
-}
+
 .total-div{
     padding: 25px;
     width: 400px;
@@ -377,6 +378,37 @@ input[type=checkbox] {
     font-weight: 700;
     font-size: 1.3rem;
     color: hsl(243, 100%, 62%);
+}
+
+/* CONFIRM PAGE */
+
+.parent-div{
+    height: 420px;
+    width: 450px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.confirm-p{
+    color: hsl(231, 11%, 63%);
+    line-height: 1.5;
+}
+
+.confirm-h1{
+    margin: 35px 0 20px 0;
+}
+
+
+@media (max-width:375px) {
+    .desktop-bg, .skinny-p, .thicc-p, .clickone-text, .clicktwo-text,.clickthree-text,.clickfour-text{
+        display: none;
+    }
+    .mobile-bg{
+        display: block;
+    }
+    .splittwo{
+        width: 340px;
+    }
 }
 .test{
     color: hsl(213, 96%, 18%) hsl(243, 100%, 62%) hsl(228, 100%, 84%) hsl(206, 94%, 87%) hsl(354, 84%, 57%);

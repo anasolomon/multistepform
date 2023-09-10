@@ -15,8 +15,6 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-(I do not understand why the website breaks on github, it was working fine remotely. The last page (4) is not supposed to be accessable until the user has completed all fields and some of the payment text overlaps weirdly... plus once the Confim button is pressed the user is supposed to get redirected to a confirmation page)
-
 ## Overview
 
 ### The challenge
@@ -50,7 +48,7 @@ Page Four
 ### Links
 
 - Solution URL: [Github](https://github.com/anasolomon/multistepform)
-- Live Site URL: [Website](anasolomon.github.io/multistepform/)
+- Live Site URL: [Website](https://anasolomon.github.io/multistepform/)
 
 ## My process
 
@@ -64,7 +62,7 @@ Page Four
 }
 ```
  
-2. If the user forgot to input one of the following then it would trigger a flag response to be equal to 0.
+2. If the user forgot to input one of the following then it would trigger a flag response to equal 0.
 ```js
 if(namee.value==""){
         document.querySelector(".name-error").style.display="block";
@@ -105,7 +103,20 @@ input[type=number] {
 ```
 which also generates an error highlight on visual studio code recommending us not to use it because it's nonstandard.
 
+Before noticing that there was an already resized mobile background picture I tried to figure a way of resizing the already existing desktop background picture so only the desired part shows. I learned that you can "crop" an image by using:
+```css
+img-test{
+object-fit: cover; 
+object-position: -20% 0;
+}
+```
 
+Line height should be set to 100% so all the padding comes from the button settings instead of the text
+```css
+button{
+  line-height: 100%;
+}
+```
 
 ### Continued development
 

@@ -12,9 +12,10 @@
 
 </head>
 <body>
+  <img src="assets/images/bg-sidebar-mobile.svg" class="mobile-bg">
   <div class="pageone">
-    <div class="splits splitone">
-      <img src="assets/images/bg-sidebar-desktop.svg">
+    <div class="splitone">
+      <img src="assets/images/bg-sidebar-desktop.svg" class="desktop-bg">
       <div class="clickone active-page">1</div>
       <div class="clickone-text">
         <p class="skinny-p">STEP 1</p>
@@ -40,7 +41,7 @@
       </div>
     </div>
     
-    <div class="splits splittwo">
+    <div class="splittwo">
       <h1>Personal info</h1>
       <p class="splittwo-p">Please provide your name, email address, and phone number.</p>
       
@@ -215,24 +216,68 @@
         <p class="planprice">$0</p>
 
         <div class="hr"></div>
-        <p class="onlineservice">Online service</p>
-        <p class="largerstorage">Larger storage</p>
-        <p class="cprofile">Customizable profile</p>
-        <p class="onlineservice-price"></p>
-        <p class="largerstorage-price"></p>
-        <p class="cprofile-price"></p>
+          <div class="leftdiv4">
+            <p class="onlineservice">Online service</p>
+            <p class="largerstorage">Larger storage</p>
+            <p class="cprofile">Customizable profile</p>
+          </div>
+          <div class="rightdiv4">
+            <p class="onlineservice-price"></p>
+            <p class="largerstorage-price"></p>
+            <p class="cprofile-price"></p>
+          </div>
       </div>
       <div class="total-div">
         <p class="total-p">Total (per month)</p>
         <p class="total-price">$0</p>
       </div>
       <button class="goback-button" onclick="clickthree()">Go Back</button>
-      <button>Confirm</button>
+      <button onclick="clickconfirm()">Confirm</button>
     </div>
   </div>
   </div>
 
   
+<!-- THANK YOU PAGE -->
+  
+<div class="pageconfirm">
+  <div class="splits splitone">
+    <img src="assets/images/bg-sidebar-desktop.svg">
+    <div class="clickone">1</div>
+    <div class="clickone-text">
+      <p class="skinny-p">STEP 1</p>
+      <p class="thicc-p">YOUR INFO</p>
+    </div>
+
+    <div class="clicktwo">2</div>
+    <div class="clicktwo-text">
+      <p class="skinny-p">STEP 2</p>
+      <p class="thicc-p">SELECT PLAN</p>
+    </div>
+
+    <div class="clickthree">3</div>
+    <div class="clickthree-text">
+      <p class="skinny-p">STEP 3</p>
+      <p class="thicc-p">ADD-ONS</p>
+    </div>
+
+    <div class="clickfour active-page">4</div>
+    <div class="clickfour-text">
+      <p class="skinny-p">STEP 4</p>
+      <p class="thicc-p">SUMMARY</p>
+    </div>
+  </div>
+  
+  <div class="splits splittwo">
+    <div class="parent-div">
+      <div><img src="assets/images/icon-thank-you.svg" alt=""></div>
+      <h1 class="confirm-h1">Thank you!</h1>
+      <p class="confirm-p">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at anamariatanasciuc@gmail.com.</p>
+    </div>
+  </div>
+</div>
+</div>
+
   <script src="script.js"></script>
 </body>
 </html>
